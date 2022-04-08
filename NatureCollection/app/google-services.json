@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846690468611",
+    "project_id": "naturecollection-f01e0",
+    "storage_bucket": "naturecollection-f01e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846690468611:android:581bfa230001fd676a5f36",
+        "android_client_info": {
+          "package_name": "fr.clalumo.naturecollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846690468611-08j3cr0m4eglt6nd7imk3j64a0miqngq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA18wZoooxInnv68ROjZKv5ntNbs240yKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846690468611-08j3cr0m4eglt6nd7imk3j64a0miqngq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

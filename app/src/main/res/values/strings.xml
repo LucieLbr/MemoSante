@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MemoSante</string>
+    <!--Page d'accueil -->
+    <string name ="home_page_welcome">Bienvenue</string>
+    <string name="home_page_title"> Accueil</string>
+    <string name ="home_page_info">Ajout Infos</string>
+    <string name ="home_page_remind">Rappels</string>
+    <string name ="home_page_resources">Ressources</string>
+    <string name ="home_page_docs">Profil</string>
+
+    <!--Page d'infos   voir vers 23min de videos -->
+    <string name="charge_image"> Charger Image</string>
+    <string name="patient_firstname"> Nom</string>
+    <string name="patient_name"> Prenom</string>
+    <string name="patient_age"> Age</string>
+    <string name="Patient_sex"> Sexe</string>
+
+    <string-array name="info_sex">
+        <item> Homme </item>
+        <item> Femme </item>
+    </string-array>
+
+    <string-array name="info_blood">
+        <item> O+ </item>
+        <item> O- </item>
+        <item> A+ </item>
+        <item> A- </item>
+        <item> B+ </item>
+        <item> B- </item>
+        <item> AB+ </item>
+        <item> AB- </item>
+    </string-array>
+    <!--Page de Docs -->
+    <!--Page de Rappels -->
+    <!--Page de ressources -->
+    <string name ="resources_name">Nom de l article</string>
+    <string name ="resources_links">lien de l article</string>
+
+    <string name="resources_click_covid"><a href="https://www.santepubliquefrance.fr/dossiers/coronavirus-covid-19">En savoir plus</a> </string>
+    <string name="resources_click_vaccin"><a href="https://www.santepubliquefrance.fr/determinants-de-sante/vaccination/documents/article/calendrier-vaccinal">En savoir plus</a> </string>
+    <string name="resources_click_mammographie"><a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/cancers/cancer-du-sein">En savoir plus</a> </string>
+    <string name="resources_click_dentiste"><a href="https://www.santepubliquefrance.fr/docs/sante-bucco-dentaire-des-adultes2">En savoir plus</a> </string>
+    <string name="resources_click_sida"><a href="https://www.santepubliquefrance.fr/l-info-accessible-a-tous/vih-sida">En savoir plus</a> </string>
+    <string name="resources_click_myopie"><a href="https://www.santepubliquefrance.fr/docs/sortir-de-la-myopie-preventive">En savoir plus</a> </string>
+
+
+</resources>

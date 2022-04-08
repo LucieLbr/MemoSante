@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/home_page_docs"
+        android:id="@+id/storage_page"
+        android:icon="@drawable/ic_profile"/>
+
+    <item
+        android:title="@string/home_page_remind"
+        android:id="@+id/remind_page"
+        android:icon="@drawable/ic_remind"/>
+
+    <item
+        android:title="@string/home_page_title"
+        android:id="@+id/home_page"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:title="@string/home_page_resources"
+        android:id="@+id/resources_page"
+        android:icon="@drawable/ic_resources"/>
+
+    <item
+        android:title="@string/home_page_info"
+        android:id="@+id/information_page"
+        android:icon="@drawable/ic_plus"/>
+
+</menu>

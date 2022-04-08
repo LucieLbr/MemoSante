@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043860502700",
+    "project_id": "memosante1",
+    "storage_bucket": "memosante1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043860502700:android:5a7c174599813a8e268709",
+        "android_client_info": {
+          "package_name": "fr.clalumo.memosante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043860502700-snpi44nde1l0losf7sstvb30n59imer5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmW8NMhDN0SamEK1lSlPC11vRAWF9pBmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043860502700-snpi44nde1l0losf7sstvb30n59imer5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
