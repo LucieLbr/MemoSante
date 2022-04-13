@@ -5,13 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import fr.clalumo.memosante.DocsModel
-import fr.clalumo.memosante.MainActivity
-import fr.clalumo.memosante.R
-import fr.clalumo.memosante.RemindModel
+import fr.clalumo.memosante.*
 
 class RemindAdapter (
-    private val context: MainActivity,
+    val context: MainActivity,
     private val remindlist: List<RemindModel>,
     private val layoutId: Int
     ) : RecyclerView.Adapter<RemindAdapter.ViewHolder>(){
@@ -19,7 +16,7 @@ class RemindAdapter (
         //boite pour ranger tous les composants à controler
         class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
             val remindName: TextView? = view.findViewById(R.id.remind_name)
-            //val remindDate: TextView? = view.findViewById(R.id.remind_date)
+            val remindDate: TextView? = view.findViewById(R.id.remind_date)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,11 +26,18 @@ class RemindAdapter (
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val currentName=remindlist[position]
-            //val currentDate=remindlist[position]
+            val currentDate=remindlist[position]
 
             // mettre à jour le nom de l'article
             holder.remindName?.text = currentName.name
-            //holder.remindDate?.text = currentDate.date
+            holder.remindDate?.text = currentDate.date
+
+            // interaction lors du click sur un rappel
+            holder.itemView.setOnClickListener {
+                // afficher la popup
+                RemindPopup(this).show()
+            }
+
         }
 
         override fun getItemCount(): Int = remindlist.size

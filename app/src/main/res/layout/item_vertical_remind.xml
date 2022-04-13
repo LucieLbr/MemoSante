@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/remind_date"
+        android:id="@+id/remind_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/kanit"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/date_name"
+        android:id="@+id/remind_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"

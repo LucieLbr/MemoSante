@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@color/peach"
+    android:elevation="20dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_remind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remind_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="Rappel"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/remind_close_button"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/remind_close_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/remind_when_Q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="Quand ?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separation" />
+    <TextView
+        android:id="@+id/remind_when_le"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="Le  "
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+    <TextView
+        android:id="@+id/remind_when_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="07/08/2022"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/remind_when_le"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+    <TextView
+        android:id="@+id/remind_when_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="  à  "
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/remind_when_date"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+    <TextView
+        android:id="@+id/remind_when_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="14"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/remind_when_a"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+    <TextView
+        android:id="@+id/remind_when_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="h"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/remind_when_hour"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+    <TextView
+        android:id="@+id/remind_when_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit"
+        android:text="30"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/remind_when_h"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_Q" />
+
+    <TextView
+        android:id="@+id/remind_where_Q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="0ù ?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_when_le" />
+    <TextView
+        android:id="@+id/remind_where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="21 Avenue de la Tauraudais, 35700 RENNES"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_where_Q" />
+
+    <TextView
+        android:id="@+id/remind_who_Q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="Qui ?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_where" />
+    <TextView
+        android:id="@+id/remind_medecin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="Dr Roger"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_who_Q" />
+
+    <ImageView
+        android:id="@+id/remind_delete_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remind_medecin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
