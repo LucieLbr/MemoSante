@@ -22,27 +22,35 @@ class StorageFragment(private val context: MainActivity) : Fragment(){
 
         docslist.add(
             DocsModel(
+            "doc1",
             "Ordonnance pilule",
-            "doc1"
+            "http://www.suivietsoinseditions.fr/store/ordonnancier/22-ordonnancier-neutre.html",
+
         ))
         docslist.add(
             DocsModel(
+            "doc2",
             "Préscription Kiné",
-            "doc2"
+            "",
+
         ))
         docslist.add(DocsModel(
+            "doc3",
             "Radio épaule",
-            "doc3"
+            "",
+
         ))
         docslist.add(DocsModel(
+            "doc4",
             "Certificat sport",
-            "doc4"
+            "",
+
         ))
 
-        val pickupDocsButton=view.findViewById<Button>(R.id.upload_docs_button)
+        /*val pickupDocsButton=view.findViewById<Button>(R.id.upload_docs_button)
         pickupDocsButton.setOnClickListener{
             pickupDocs()
-        }
+        }*/
 
         //recuper le recyclerview
         val verticalRecyclerView=view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
@@ -50,10 +58,10 @@ class StorageFragment(private val context: MainActivity) : Fragment(){
 
         return view
     }
-    private fun pickupDocs() {
+    /*private fun pickupDocs() {
         val intent= Intent()
         intent.type="image/"
         intent.action= Intent.ACTION_GET_CONTENT
         startActivityForResult(Intent.createChooser(intent,"Select Picture"),47)
-    }
+    }*/
 }

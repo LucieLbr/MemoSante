@@ -7,6 +7,6 @@ class RemindModel (
 
     val hour:String="14",
     val min:String="30",
-    val medecin:String="Dr Roger",
     val where:String="Rennes",
+    val medecin:String="Dr Roger",
         )

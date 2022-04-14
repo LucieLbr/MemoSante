@@ -3,6 +3,7 @@ package fr.clalumo.memosante.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import fr.clalumo.memosante.*
@@ -25,20 +26,17 @@ class RemindAdapter (
         }
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            val currentName=remindlist[position]
-            val currentDate=remindlist[position]
+            val currentRemind=remindlist[position]
 
             // mettre à jour le nom de l'article
-            holder.remindName?.text = currentName.name
-            holder.remindDate?.text = currentDate.date
+            holder.remindName?.text = currentRemind.name
+            holder.remindDate?.text = currentRemind.date
 
             // interaction lors du click sur un rappel
             holder.itemView.setOnClickListener {
                 // afficher la popup
-                RemindPopup(this).show()
+                RemindPopup(this, currentRemind).show()
             }
-
         }
-
         override fun getItemCount(): Int = remindlist.size
     }

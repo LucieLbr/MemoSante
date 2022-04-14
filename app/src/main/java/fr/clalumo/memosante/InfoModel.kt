@@ -7,5 +7,5 @@ class InfoModel (
     val firstname:String="Robidou",
     val blood:String="O+",
     val sex:String="Femme",
-    val imageUrl:String="ebfob"
+    val imageUrl:String=""
 )

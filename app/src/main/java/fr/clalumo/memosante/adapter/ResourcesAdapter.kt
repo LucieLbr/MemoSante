@@ -37,12 +37,10 @@ class ResourcesAdapter(
         val currentimg=imglist[position]
         val currentlink=linklist[position]
 
-
         //utiliser glide pour recuperer l'image à partir de son lien
         Glide.with(context).load(Uri.parse(currentimg.imgUrl)).into(holder.resourcesImg)
 
-        // mettre à jour le nom de l'article
-
+        // mettre à jour les info de l'article
         holder.resourcesName?.text = currentimg.name
         holder.resourcesLink?.text = currentlink
     }

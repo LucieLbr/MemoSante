@@ -30,8 +30,55 @@
         <item> AB+ </item>
         <item> AB- </item>
     </string-array>
+
+
     <!--Page de Docs -->
+
+
     <!--Page de Rappels -->
+    <string-array name="remind_hour">
+        <item> 01 </item>
+        <item> 02 </item>
+        <item> 03 </item>
+        <item> 04 </item>
+        <item> 05 </item>
+        <item> 06 </item>
+        <item> 07 </item>
+        <item> 08 </item>
+        <item> 09 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+        <item> 16 </item>
+        <item> 17 </item>
+        <item> 18 </item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 00 </item>
+    </string-array>
+
+    <string-array name="remind_min">
+        <item> 00 </item>
+        <item> 05 </item>
+        <item> 10 </item>
+        <item> 15 </item>
+        <item> 20 </item>
+        <item> 25 </item>
+        <item> 30 </item>
+        <item> 35 </item>
+        <item> 40 </item>
+        <item> 45 </item>
+        <item> 50 </item>
+        <item> 55 </item>
+    </string-array>
+
+
     <!--Page de ressources -->
     <string name ="resources_name">Nom de l article</string>
     <string name ="resources_links">lien de l article</string>
@@ -42,6 +89,4 @@
     <string name="resources_click_dentiste"><a href="https://www.santepubliquefrance.fr/docs/sante-bucco-dentaire-des-adultes2">En savoir plus</a> </string>
     <string name="resources_click_sida"><a href="https://www.santepubliquefrance.fr/l-info-accessible-a-tous/vih-sida">En savoir plus</a> </string>
     <string name="resources_click_myopie"><a href="https://www.santepubliquefrance.fr/docs/sortir-de-la-myopie-preventive">En savoir plus</a> </string>
-
-
 </resources>

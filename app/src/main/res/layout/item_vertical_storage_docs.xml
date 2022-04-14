@@ -29,19 +29,27 @@
         android:textColor="@color/dark_gray"
         android:textSize="15dp"/>
 
-    <Button
-        android:id="@+id/button_show_doc"
+    <androidx.cardview.widget.CardView
         android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:layout_marginRight="10dp"
-        android:text="Voir"
-        android:fontFamily="@font/kanit"
-        android:textSize="10dp"
-        android:textColor="@color/dark_gray"
         android:backgroundTint="@color/dark_green"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir"
+            android:fontFamily="@font/kanit"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_gray"/>
+
+    </androidx.cardview.widget.CardView>
 
     <View
         android:id="@+id/separation"

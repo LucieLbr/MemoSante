@@ -25,7 +25,7 @@ class AddPatientFragment(private val context: MainActivity): Fragment(){
     private var uploadedImage:ImageView?=null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater?.inflate(R.layout.fragment_add_patient, container, false)
+        val view = inflater?.inflate(R.layout.fragment_information, container, false)
 
         uploadedImage=view.findViewById(R.id.preview_image)
         val pickupImageButton=view.findViewById<Button>(R.id.upload_button)

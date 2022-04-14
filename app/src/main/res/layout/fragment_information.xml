@@ -3,8 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ligth_blue"
-    >
+    android:background="@color/ligth_blue">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,8 +19,7 @@
             android:textSize="25dp"
             android:backgroundTint="@color/blue"
             android:padding="@dimen/default_margin"
-            android:layout_marginLeft="@dimen/default_margin"
-            />
+            android:layout_marginLeft="@dimen/default_margin" />
 
         <ImageView
             android:layout_marginTop="@dimen/default_margin"
@@ -31,11 +29,8 @@
             android:src="@drawable/ic_photo"
             android:padding="@dimen/default_margin"
             android:scaleType="centerCrop"/>
-            //android:layout_marginLeft="@dimen/default_margin"
-            />
-
-
     </LinearLayout>
+
 
     <EditText
         android:id="@+id/firstname_input"
@@ -44,16 +39,18 @@
         android:hint="Nom"
         android:fontFamily="@font/kanit"
         android:textSize="20dp"
+        android:layout_marginRight="20dp"
         android:paddingLeft="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"/>
 
     <EditText
-        android:id="@+id/name_button"
+        android:id="@+id/name_input"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:hint="Prenom"
         android:fontFamily="@font/kanit"
         android:textSize="20dp"
+        android:layout_marginRight="20dp"
         android:paddingLeft="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"/>
 
@@ -62,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:hint="Age"
+        android:layout_marginRight="20dp"
         android:fontFamily="@font/kanit"
         android:textSize="20dp"
         android:paddingLeft="@dimen/default_margin"
@@ -74,6 +72,7 @@
         android:entries="@array/info_sex"
         android:fontFamily="@font/kanit"
         android:textSize="20dp"
+        android:layout_marginRight="10dp"
         android:paddingLeft="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"
         />
@@ -83,6 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:entries="@array/info_blood"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/kanit"
         android:textSize="20dp"
         android:paddingLeft="@dimen/default_margin"
