@@ -8,10 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import fr.clalumo.memosante.DocsModel
-import fr.clalumo.memosante.MainActivity
-import fr.clalumo.memosante.R
-import fr.clalumo.memosante.RemindModel
+import fr.clalumo.memosante.*
 import fr.clalumo.memosante.adapter.DocsAdapter
 import fr.clalumo.memosante.adapter.RemindAdapter
 
@@ -102,6 +99,14 @@ class RemindFragment(private val context: MainActivity) : Fragment(){
                 "15",
                 "Bruz",
             ))
+
+        // recuperer l'adresse du button
+        val pickupUploadRemindButton=view.findViewById<Button>(R.id.upload_remind_button)
+        // interastion lors d'un click sur le button
+        pickupUploadRemindButton.setOnClickListener{
+            // afficher la popup
+            NewRemindPopup(RemindAdapter(context,remindlist, R.layout.item_vertical_remind)).show()
+        }
 
         //recuper le recyclerview
         val verticalRecyclerView=view.findViewById<RecyclerView>(R.id.vertical_recycler_view)

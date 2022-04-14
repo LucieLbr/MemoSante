@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.Window
 import android.widget.ImageView
 import fr.clalumo.memosante.adapter.RemindAdapter
+import fr.clalumo.memosante.fragments.AddRemindFragment
 
-class NewRemindPopup (
-    private val adapter : RemindAdapter
+class NewRemindPopup(
+    private val adapter: RemindAdapter
 ) : Dialog(adapter.context) {
 
     override fun onCreate(savedInstanceState: Bundle?) {

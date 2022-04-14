@@ -47,10 +47,10 @@ class StorageFragment(private val context: MainActivity) : Fragment(){
 
         ))
 
-        /*val pickupDocsButton=view.findViewById<Button>(R.id.upload_docs_button)
+        val pickupDocsButton=view.findViewById<Button>(R.id.upload_docs_button)
         pickupDocsButton.setOnClickListener{
-            pickupDocs()
-        }*/
+
+        }
 
         //recuper le recyclerview
         val verticalRecyclerView=view.findViewById<RecyclerView>(R.id.vertical_recycler_view)

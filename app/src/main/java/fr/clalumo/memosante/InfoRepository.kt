@@ -1,6 +1,6 @@
 package fr.clalumo.memosante
 
-//import fr.clalumo.memosante.InfoRepository.Singleton.storageReference
+import fr.clalumo.memosante.InfoRepository.Singleton
 import android.net.Uri
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.Task
